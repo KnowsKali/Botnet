@@ -2,17 +2,18 @@ import array
 
 
 class Client :
-    def self ( self , name , ip , port ) :
+    def self ( self , name , ip , port , info ) :
         t = self
         t.name = name
         t.ip = ip
         t.port = port
+        t.info = info
         return t
 
     name: str = ""
     ip: str = ""
     port: int = ""
-
+    info: str = ""
 
 Client_List: array = [ ]
 
